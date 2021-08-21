@@ -1,0 +1,25 @@
+/*GCD OF TWO NUMBERS*/
+#include <iostream>
+using namespace std;
+
+//no algorithm approach
+int gcd(int a ,int b){
+int res=min(a,b);//we will find minimum value
+while(res>0){
+if(a%res==0 && b%res==0){//if res gives 0 in modulo divison then that is final result we will return
+    break;
+}
+res--;//oresle we will reduce the result by one and one and so one for each iteraton
+}
+return res;
+}
+
+
+
+int main()
+{
+    
+    int c=gcd(25,50);
+    cout<<c;
+    return 0;
+}
