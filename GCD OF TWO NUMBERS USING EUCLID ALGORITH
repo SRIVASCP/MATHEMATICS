@@ -1,0 +1,26 @@
+/**GCD OF TWO NUMBERS*/
+#include <iostream>
+using namespace std;
+int gcd(int a ,int b){////EUCLID ALGORITHM STATES THIS FIRST CHECK A AND B WHICH ONE IS GREATER SUBTRACT SMALLER ONE FROM THAT AND UPDATE THAT VALUE
+    
+    while(a!=b){///UPON SUBTRACTIONS WE ARE GAURANTEED THAT BOTH WILL BE EQUAL AT SOME POINT AND THAT IS WHERE CONDITION BREAKS
+    if(a>b){//FIRST CHECK THE CONDITION 
+    
+        a=a-b;
+    }
+    else{
+        b=b-a;
+    }
+    }
+    return b;
+    
+}
+
+int main()
+{
+    int c=gcd(50,65);
+    std::cout << c << std::endl;
+   
+
+    return 0;
+}
