@@ -1,0 +1,22 @@
+/**GCD OF TWO NUMBERS*/
+#include <iostream>
+using namespace std;
+int gcd(int a ,int b){
+        
+    if(b==0){
+        return a;
+    }
+    else{
+        return gcd(b,a%b);
+    }
+    
+}
+
+int main()
+{
+    int c=gcd(50,65);
+    std::cout << c << std::endl;
+   
+
+    return 0;
+}
